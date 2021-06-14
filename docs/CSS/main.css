@@ -246,7 +246,7 @@ main {
 }
 
 .nav__title--background {
-  background-color: #EAEAEA;
+  background: linear-gradient(to bottom, #cccccc 0%, #EAEAEA 10px, #EAEAEA 100%);
 }
 
 .nav__title--background-2 {
@@ -255,8 +255,6 @@ main {
 
 .nav__title--border {
   border: 0px solid white;
-  border-top-width: 5px;
-  border-top-color: lightblue;
 }
 
 .nav__title--padding {

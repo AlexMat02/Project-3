@@ -6,15 +6,13 @@
         margin-left: 10px;
     }
     &--background{
-        background-color: $color-grey;
+        background: linear-gradient(to bottom, $color-lightgrey-shadow 0%, $color-grey 10px, $color-grey 100%);
     }
     &--background-2{
         background-color: $color-lightgrey;
     }
     &--border{
         border: 0px solid white;
-        border-top-width: 5px;
-        border-top-color: lightblue;
     }
     &--padding{
         padding-top: 1px;
