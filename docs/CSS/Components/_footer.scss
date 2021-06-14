@@ -1,0 +1,26 @@
+footer{
+    background-color: #353535;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__text{
+        color: white;
+        margin-left: 15px;
+        margin-bottom: -2px;
+    }
+    .footer__img{
+        width: 170px;
+        filter: brightness(0) invert(1);
+    }
+    .footer__tool-container{
+        display: inline-flex;
+        align-items: baseline;
+    }
+}
+
+
+

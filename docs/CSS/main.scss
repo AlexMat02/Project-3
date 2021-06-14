@@ -1,0 +1,15 @@
+@import "./Utils/_functions.scss";
+@import "./Utils/_mixins.scss";
+@import "./Utils/_variables.scss";
+
+@import "./Base/_base.scss";
+
+@import "./Components/_footer.scss";
+@import "./Components/_buttons.scss";
+
+@import "./Layouts/_header.scss";
+@import "./Layouts/_maincontent.scss";
+@import "./Layouts/_img-header.scss";
+
+@import "./Pages/_navbar.scss";
+@import "./Pages/_section.scss";

@@ -1,0 +1,45 @@
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.section__container{
+    display: flex;
+    align-items: baseline;
+    background: $color-lightgrey;
+    border: 1px $color-lightgrey solid;
+    border-radius: 28px;
+    margin: 10px;
+    box-shadow: 0px 2px 8px $color-grey;
+    transition-duration: 0.4s;
+    &--padding{
+        margin-left: 10px;
+        margin-right: 25px;
+    }
+    &--p-style{
+        border: 1px solid $color-primary;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: $color-primary;
+        position: relative;
+        right: 13px;
+        color: white;
+    }
+    &--logo-style{
+        color: $color-logo-grey;
+    }
+    &--text{
+        font-weight: bold;
+    }
+    &--margin-homepage{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    &:hover{
+        background: $color-section-hover;
+        .section__container--logo-style{
+            color: $color-primary;
+        }
+    }
+}
