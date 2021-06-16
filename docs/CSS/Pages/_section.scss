@@ -42,4 +42,9 @@ section{
             color: $color-primary;
         }
     }
+    &--header{
+        border-bottom: 4px solid $color-tertiary;
+        max-width: 42px;
+        display: block ruby;
+    }
 }

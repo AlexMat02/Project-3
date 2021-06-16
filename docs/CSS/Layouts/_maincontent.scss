@@ -48,8 +48,10 @@ main{
     &-logo{
         justify-self: flex-end;
         align-self: center;
-        &-filled{
-            display: none !important;
+        transition-duration: 0.2s;
+        &:hover{
+            font-weight: 800;
+            color: linear-gradient(to bottom right, $color-secondary, $color-primary);;
         }
     }
     &-text--bold{
@@ -61,6 +63,17 @@ main{
     }
     &-shadow{
         box-shadow: 0px 2px 8px $color-lightgrey-shadow;
+    }
+    &-tag-new{
+        background-color: $color-tertiary;
+        color: $color-tertiary-darker;
+        position: absolute;
+        align-self: flex-end;
+        margin: 10px;
+        padding: 20px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        font-weight: bold;
     }
 }
 
