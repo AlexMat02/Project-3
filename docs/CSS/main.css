@@ -201,8 +201,8 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .main__container-logo:hover {
@@ -239,6 +239,56 @@ main {
   padding-bottom: 4px;
   padding-top: 4px;
   font-weight: bold;
+}
+
+.main__container--animation-1 {
+  -webkit-animation-name: card-1;
+          animation-name: card-1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  position: relative;
+}
+
+.main__container--animation-2 {
+  -webkit-animation-name: card-1;
+          animation-name: card-1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  position: relative;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.main__container--animation-3 {
+  -webkit-animation-name: card-1;
+          animation-name: card-1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  position: relative;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+@-webkit-keyframes card-1 {
+  from {
+    top: 10px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes card-1 {
+  from {
+    top: 10px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
 }
 
 .main__big-container {
@@ -331,8 +381,8 @@ section {
   margin: 10px;
   -webkit-box-shadow: 0px 2px 8px #EAEAEA;
           box-shadow: 0px 2px 8px #EAEAEA;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .section__container--padding {
