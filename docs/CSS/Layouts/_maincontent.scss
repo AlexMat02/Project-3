@@ -51,7 +51,10 @@ main{
         transition-duration: 0.2s;
         &:hover{
             font-weight: 800;
-            color: linear-gradient(to bottom right, $color-secondary, $color-primary);;
+            background: -webkit-linear-gradient($color-primary, $color-secondary);
+            background-clip: random($limit: 1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     &-text--bold{

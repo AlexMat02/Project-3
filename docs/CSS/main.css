@@ -207,7 +207,10 @@ main {
 
 .main__container-logo:hover {
   font-weight: 800;
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main__container-text--bold {
