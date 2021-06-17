@@ -392,7 +392,7 @@ section {
 
 .section__container--p-style {
   border: 1px solid #9356DC;
-  border-radius: 15px;
+  border-radius: 50%;
   padding: 10px;
   background-color: #9356DC;
   position: relative;
@@ -425,5 +425,225 @@ section {
   border-bottom: 4px solid #99E2D0;
   max-width: 42px;
   display: block ruby;
+}
+
+.body-animation {
+  -webkit-animation-name: body-animation-1;
+          animation-name: body-animation-1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.body-animation-loading {
+  border: 5px solid black;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 25%;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-name: loading-animation;
+          animation-name: loading-animation;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+@-webkit-keyframes body-animation-1 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes body-animation-1 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loading-animation {
+  5% {
+    border-top-color: white;
+    opacity: 1;
+  }
+  10% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  15% {
+    border-right-color: black;
+    border-bottom-color: white;
+  }
+  20% {
+    border-bottom-color: black;
+    border-left-color: white;
+  }
+  25% {
+    border-left-color: black;
+    border-top-color: white;
+  }
+  30% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  35% {
+    border-right-color: black;
+    border-bottom-color: white;
+  }
+  40% {
+    border-bottom-color: black;
+    border-left-color: white;
+  }
+  45% {
+    border-left-color: black;
+    border-top-color: white;
+  }
+  50% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  55% {
+    border-right-color: black;
+    border-bottom-color: white;
+  }
+  60% {
+    border-bottom-color: black;
+    border-left-color: white;
+  }
+  65% {
+    border-left-color: black;
+    border-top-color: white;
+  }
+  70% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  75% {
+    border-right-color: black;
+    border-bottom-color: white;
+  }
+  80% {
+    border-bottom-color: black;
+    border-left-color: white;
+  }
+  85% {
+    border-left-color: black;
+    border-top-color: white;
+  }
+  90% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  95% {
+    border-right-color: black;
+    border-bottom-color: white;
+    opacity: 1;
+  }
+  100% {
+    border-bottom-color: black;
+    border-left-color: white;
+    opacity: 0;
+  }
+}
+
+@keyframes loading-animation {
+  5% {
+    border-top-color: white;
+    opacity: 1;
+  }
+  10% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  15% {
+    border-right-color: black;
+    border-bottom-color: white;
+  }
+  20% {
+    border-bottom-color: black;
+    border-left-color: white;
+  }
+  25% {
+    border-left-color: black;
+    border-top-color: white;
+  }
+  30% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  35% {
+    border-right-color: black;
+    border-bottom-color: white;
+  }
+  40% {
+    border-bottom-color: black;
+    border-left-color: white;
+  }
+  45% {
+    border-left-color: black;
+    border-top-color: white;
+  }
+  50% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  55% {
+    border-right-color: black;
+    border-bottom-color: white;
+  }
+  60% {
+    border-bottom-color: black;
+    border-left-color: white;
+  }
+  65% {
+    border-left-color: black;
+    border-top-color: white;
+  }
+  70% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  75% {
+    border-right-color: black;
+    border-bottom-color: white;
+  }
+  80% {
+    border-bottom-color: black;
+    border-left-color: white;
+  }
+  85% {
+    border-left-color: black;
+    border-top-color: white;
+  }
+  90% {
+    border-top-color: black;
+    border-right-color: white;
+  }
+  95% {
+    border-right-color: black;
+    border-bottom-color: white;
+    opacity: 1;
+  }
+  100% {
+    border-bottom-color: black;
+    border-left-color: white;
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
