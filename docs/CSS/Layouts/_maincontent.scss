@@ -87,15 +87,26 @@ main{
         display: block;
         align-self: center;
         justify-self: flex-end;
-        background-color: $color-tertiary;
         color: white;
-        padding: 27px;
-        padding-right: 27px;
-        border-radius: 25px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        animation-duration: 1.5s;
+        animation-duration: 1.7s;
         animation-fill-mode: forwards;
+        z-index: 4;
+        &-2{
+            opacity: 0;
+            position: absolute;
+            display: block;
+            align-self: center;
+            justify-self: flex-end;
+            color: $color-tertiary;
+            animation-duration: 1.7s;
+            animation-fill-mode: forwards;
+            background-color: $color-tertiary;
+            padding: 27px;
+            border-radius: 25px; 
+            border-top-left-radius: 0px; 
+            border-bottom-left-radius: 0px;
+            z-index: 1;
+        }
     }
     &--animation-1{
         @include animation-restaurant-cards;
@@ -107,17 +118,23 @@ main{
     }
     &--animation-3{
         @include animation-restaurant-cards;
-        animation-duration: 1.4s;
+        animation-duration: 1.5s;
+    }
+    &--animation-4{
+        @include animation-restaurant-cards;
+        animation-duration: 2s;
     }
     &--hover-animation{
         background-color: white;
-        animation-duration: 1.5s;
         animation-fill-mode: forwards;
         &:hover{
             background-color: white;
             .main__container-logohover{
                 opacity: 1;
                 animation-name: hover-animation-checkmark;
+            }
+            .main__container-logohover-2{
+                animation-name: hover-animation-checkmark-2;
             }
             .main__container-price{
                 position: inherit;
@@ -128,8 +145,13 @@ main{
 }
 
 @keyframes hover-animation-checkmark{
-    0% {opacity: 0; padding: 0px; padding-top: 27px; padding-bottom: 27px;}
-    100% {opacity: 1;}
+    from {opacity: 0; right: 0px; rotate: (0turn);}
+    to {opacity: 1; right:30px; rotate: (1turn);}
+}
+
+@keyframes hover-animation-checkmark-2{
+    from {opacity: 0; padding: 0px; padding-top: 27px; padding-bottom: 27px;}
+    to {opacity: 1; padding: 27px;}
 }
 
 @keyframes hover-animation-price{

@@ -255,17 +255,33 @@ main {
       -ms-grid-row-align: center;
       align-self: center;
   justify-self: flex-end;
-  background-color: #99E2D0;
   color: white;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 4;
+}
+
+.main__container-logohover-2 {
+  opacity: 0;
+  position: absolute;
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  justify-self: flex-end;
+  color: #99E2D0;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-color: #99E2D0;
   padding: 27px;
-  padding-right: 27px;
   border-radius: 25px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  z-index: 1;
 }
 
 .main__container--animation-1 {
@@ -288,14 +304,20 @@ main {
   -webkit-animation-name: card-1;
           animation-name: card-1;
   position: relative;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.main__container--animation-4 {
+  -webkit-animation-name: card-1;
+          animation-name: card-1;
+  position: relative;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .main__container--hover-animation {
   background-color: white;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -310,6 +332,11 @@ main {
           animation-name: hover-animation-checkmark;
 }
 
+.main__container--hover-animation:hover .main__container-logohover-2 {
+  -webkit-animation-name: hover-animation-checkmark-2;
+          animation-name: hover-animation-checkmark-2;
+}
+
 .main__container--hover-animation:hover .main__container-price {
   position: inherit;
   -webkit-animation-name: hover-animation-price;
@@ -317,26 +344,54 @@ main {
 }
 
 @-webkit-keyframes hover-animation-checkmark {
-  0% {
+  from {
     opacity: 0;
-    padding: 0px;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    right: 0px;
+    rotate: 0turn;
   }
-  100% {
+  to {
     opacity: 1;
+    right: 30px;
+    rotate: 1turn;
   }
 }
 
 @keyframes hover-animation-checkmark {
-  0% {
+  from {
+    opacity: 0;
+    right: 0px;
+    rotate: 0turn;
+  }
+  to {
+    opacity: 1;
+    right: 30px;
+    rotate: 1turn;
+  }
+}
+
+@-webkit-keyframes hover-animation-checkmark-2 {
+  from {
     opacity: 0;
     padding: 0px;
     padding-top: 27px;
     padding-bottom: 27px;
   }
-  100% {
+  to {
     opacity: 1;
+    padding: 27px;
+  }
+}
+
+@keyframes hover-animation-checkmark-2 {
+  from {
+    opacity: 0;
+    padding: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  to {
+    opacity: 1;
+    padding: 27px;
   }
 }
 
