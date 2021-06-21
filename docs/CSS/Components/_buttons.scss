@@ -20,10 +20,9 @@
         }
     }
     &:hover{
-        border: 5px solid $color-tertiary;
+        box-shadow: 0px 6px 8px $color-lightgrey-shadow;
     }
     &:active{
         box-shadow: 0px 0px 8px #6CD5B9;
-        border-color: #6CD5B9;
     }
 }
