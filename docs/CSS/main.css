@@ -7,15 +7,6 @@
   margin-top: 10px;
 }
 
-body {
-  margin: 0px;
-  font-family: "roboto";
-}
-
-.title-font {
-  font-family: "shrikhand";
-}
-
 @font-face {
   font-family: 'roboto';
   src: url("/docs/RES/Font/Roboto-Light.ttf");
@@ -28,6 +19,15 @@ body {
   src: url("/docs/RES/Font/Shrikhand-Regular.ttf");
   font-weight: normal;
   font-style: normal;
+}
+
+body {
+  margin: 0px;
+  font-family: "roboto";
+}
+
+.title-font {
+  font-family: "shrikhand";
 }
 
 footer {
