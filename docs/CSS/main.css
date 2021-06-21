@@ -9,14 +9,14 @@
 
 @font-face {
   font-family: 'roboto';
-  src: url("/docs/RES/Font/Roboto-Light.ttf");
+  src: url("./../RES/Font/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'shrikhand';
-  src: url("/docs/RES/Font/Shrikhand-Regular.ttf");
+  src: url("./../RES/Font/Shrikhand-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
