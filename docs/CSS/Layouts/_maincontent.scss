@@ -58,7 +58,7 @@ main{
         &:hover{
             font-weight: 800;
             background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-            background-clip: random($limit: 1);
+            background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
