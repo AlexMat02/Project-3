@@ -102,6 +102,8 @@ footer .footer__tool-container {
 .btn:hover {
   -webkit-box-shadow: 0px 6px 8px #cccccc;
           box-shadow: 0px 6px 8px #cccccc;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF94E1), to(#9D67E0));
+  background: linear-gradient(to bottom right, #FF94E1, #9D67E0);
 }
 
 .btn:active {
