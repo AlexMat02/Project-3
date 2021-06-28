@@ -173,8 +173,8 @@ main {
   padding-bottom: 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
   grid-auto-rows: 100%;
 }
 
@@ -198,18 +198,25 @@ main {
   padding-top: 0px;
 }
 
+.main__container-text--overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .main__container-logo {
   justify-self: flex-end;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .main__container-logo:hover {
   font-weight: 800;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   background-clip: 1;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -223,8 +230,8 @@ main {
   -ms-flex-item-align: end;
       align-self: flex-end;
   justify-self: flex-end;
-  -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -256,8 +263,8 @@ main {
       align-self: center;
   justify-self: flex-end;
   color: white;
-  -webkit-animation-duration: 1.7s;
-          animation-duration: 1.7s;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   z-index: 4;
@@ -272,8 +279,8 @@ main {
       align-self: center;
   justify-self: flex-end;
   color: #99E2D0;
-  -webkit-animation-duration: 1.7s;
-          animation-duration: 1.7s;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background-color: #99E2D0;
@@ -346,12 +353,12 @@ main {
 @-webkit-keyframes hover-animation-checkmark {
   from {
     opacity: 0;
-    right: 0px;
+    right: -15px;
     rotate: 0turn;
   }
   to {
     opacity: 1;
-    right: 30px;
+    right: 15px;
     rotate: 1turn;
   }
 }
@@ -359,12 +366,12 @@ main {
 @keyframes hover-animation-checkmark {
   from {
     opacity: 0;
-    right: 0px;
+    right: -15px;
     rotate: 0turn;
   }
   to {
     opacity: 1;
-    right: 30px;
+    right: 15px;
     rotate: 1turn;
   }
 }
@@ -379,6 +386,7 @@ main {
   to {
     opacity: 1;
     padding: 27px;
+    padding-left: 0px;
   }
 }
 
@@ -392,6 +400,7 @@ main {
   to {
     opacity: 1;
     padding: 27px;
+    padding-left: 0px;
   }
 }
 
@@ -400,7 +409,7 @@ main {
     right: 0;
   }
   to {
-    right: 90px;
+    right: 50px;
   }
 }
 
@@ -409,7 +418,7 @@ main {
     right: 0;
   }
   to {
-    right: 90px;
+    right: 50px;
   }
 }
 
@@ -569,6 +578,7 @@ section {
   border-bottom: 4px solid #99E2D0;
   max-width: 42px;
   display: block ruby;
+  white-space: nowrap;
 }
 
 .body-animation {

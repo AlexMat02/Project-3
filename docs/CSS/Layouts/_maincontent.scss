@@ -27,7 +27,7 @@ main{
         padding: 10px;
         padding-bottom: 0px;
         display: grid;
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 70% 30%;
         grid-auto-rows: 100%;
         &--border-round{
             border-radius: 25px;
@@ -45,14 +45,19 @@ main{
         &--padding{
             padding-top: 0px;
         }
+        &--overflow{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
     }
     &-logo{
         justify-self: flex-end;
         align-self: center;
-        transition-duration: 0.5s;
+        transition: 0.5s ease-in-out;
         &:hover{
             font-weight: 800;
-            background: -webkit-linear-gradient($color-primary, $color-secondary);
+            background: linear-gradient(to bottom right, $color-secondary, $color-primary);
             background-clip: random($limit: 1);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -64,7 +69,7 @@ main{
     &-price{
         align-self: flex-end;
         justify-self: flex-end;
-        animation-duration: 1.3s;
+        animation-duration: 1s;
         animation-fill-mode: forwards;
     }
     &-shadow{
@@ -88,7 +93,7 @@ main{
         align-self: center;
         justify-self: flex-end;
         color: white;
-        animation-duration: 1.7s;
+        animation-duration: 1.3s;
         animation-fill-mode: forwards;
         z-index: 4;
         &-2{
@@ -98,7 +103,7 @@ main{
             align-self: center;
             justify-self: flex-end;
             color: $color-tertiary;
-            animation-duration: 1.7s;
+            animation-duration: 1.3s;
             animation-fill-mode: forwards;
             background-color: $color-tertiary;
             padding: 27px;
@@ -145,25 +150,24 @@ main{
 }
 
 @keyframes hover-animation-checkmark{
-    from {opacity: 0; right: 0px; rotate: (0turn);}
-    to {opacity: 1; right:30px; rotate: (1turn);}
+    from {opacity: 0; right: -15px; rotate: (0turn);}
+    to {opacity: 1; right:15px; rotate: (1turn);}
 }
 
 @keyframes hover-animation-checkmark-2{
     from {opacity: 0; padding: 0px; padding-top: 27px; padding-bottom: 27px;}
-    to {opacity: 1; padding: 27px;}
+    to {opacity: 1; padding: 27px; padding-left: 0px;}
 }
 
 @keyframes hover-animation-price{
     from {right: 0;}
-    to {right: 90px;}
+    to {right: 50px;}
 }
 
 @keyframes card-1{
     from {top: 10px; opacity: 0;}
     to {top: 0px; opacity: 1;}
 }
-
 
 .main__big-container{
     padding-top: 0px;
