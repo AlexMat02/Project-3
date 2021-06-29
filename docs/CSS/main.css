@@ -147,6 +147,19 @@ main {
   margin-left: 30px;
 }
 
+.mobile-text {
+  visibility: hidden;
+  -webkit-transition: visibility;
+  transition: visibility;
+}
+
+.desktop-text {
+  visibility: visible;
+  position: initial;
+  -webkit-transition: visibility;
+  transition: visibility;
+}
+
 .main__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,8 +188,8 @@ main {
   padding-bottom: 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% 30%;
-      grid-template-columns: 70% 30%;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
   grid-auto-rows: 100%;
 }
 
@@ -203,7 +216,6 @@ main {
 .main__container-text--overflow {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .main__container-logo {
@@ -352,6 +364,49 @@ main {
           animation-name: hover-animation-price;
 }
 
+@media screen and (max-width: 380px) {
+  .main__container--hover-animation:hover .desktop-text {
+    visibility: hidden;
+    position: absolute;
+  }
+  .main__container--hover-animation:hover .mobile-text {
+    visibility: visible;
+  }
+}
+
+.main__container--hover-animation-larger {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-color: white;
+}
+
+.main__container--hover-animation-larger:hover .main__container-logohover {
+  opacity: 1;
+  -webkit-animation-name: hover-animation-checkmark;
+          animation-name: hover-animation-checkmark;
+}
+
+.main__container--hover-animation-larger:hover .main__container-logohover-2 {
+  -webkit-animation-name: hover-animation-checkmark-2-larger;
+          animation-name: hover-animation-checkmark-2-larger;
+}
+
+.main__container--hover-animation-larger:hover .main__container-price {
+  position: inherit;
+  -webkit-animation-name: hover-animation-price;
+          animation-name: hover-animation-price;
+}
+
+@media screen and (max-width: 380px) {
+  .main__container--hover-animation-larger:hover .desktop-text {
+    position: absolute;
+    visibility: hidden;
+  }
+  .main__container--hover-animation-larger:hover .mobile-text {
+    visibility: visible;
+  }
+}
+
 @-webkit-keyframes hover-animation-checkmark {
   from {
     opacity: 0;
@@ -360,7 +415,7 @@ main {
   }
   to {
     opacity: 1;
-    right: 15px;
+    right: 30px;
     rotate: 1turn;
   }
 }
@@ -373,7 +428,7 @@ main {
   }
   to {
     opacity: 1;
-    right: 15px;
+    right: 30px;
     rotate: 1turn;
   }
 }
@@ -388,7 +443,6 @@ main {
   to {
     opacity: 1;
     padding: 27px;
-    padding-left: 0px;
   }
 }
 
@@ -402,7 +456,36 @@ main {
   to {
     opacity: 1;
     padding: 27px;
-    padding-left: 0px;
+  }
+}
+
+@-webkit-keyframes hover-animation-checkmark-2-larger {
+  from {
+    opacity: 0;
+    padding: 0px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+  to {
+    opacity: 1;
+    padding: 38px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
+@keyframes hover-animation-checkmark-2-larger {
+  from {
+    opacity: 0;
+    padding: 0px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+  to {
+    opacity: 1;
+    padding: 38px;
+    padding-left: 27px;
+    padding-right: 27px;
   }
 }
 
@@ -411,7 +494,7 @@ main {
     right: 0;
   }
   to {
-    right: 50px;
+    right: 90px;
   }
 }
 
@@ -420,7 +503,7 @@ main {
     right: 0;
   }
   to {
-    right: 50px;
+    right: 90px;
   }
 }
 
