@@ -12,12 +12,21 @@ main{
 .mobile-text{
     visibility: hidden;
     transition: visibility ;
+    &-larger{
+        visibility: hidden;
+        transition: visibility ;
+    }
 }
 
 .desktop-text{
     visibility: visible;
     position: initial;
     transition: visibility;
+    &-larger{
+        visibility: visible;
+        position: initial;
+        transition: visibility;
+    }
 }
 
 .main__container{
@@ -123,6 +132,10 @@ main{
             z-index: 1;
         }
     }
+    &--hover-animation-449px{
+        color: black;
+        transition: all;
+    }
     &--animation-1{
         @include animation-restaurant-cards;
         animation-duration: 0.5s;
@@ -163,34 +176,74 @@ main{
                 .mobile-text{
                     visibility: visible;
                 } 
-            }  
-        }
-    &-larger{
-        animation-fill-mode: forwards;
-        background-color: white;
-        &:hover{
-            .main__container-logohover{
-                opacity: 1;
-                animation-name: hover-animation-checkmark;
-            }
-            .main__container-logohover-2{
-                animation-name: hover-animation-checkmark-2-larger;
-            }
-            .main__container-price{
-                position: inherit;
-                animation-name: hover-animation-price;
-            }
-            @media screen and (max-width: 380px){
-                .desktop-text{
-                    position: absolute;
-                    visibility: hidden;
-                }
-                .mobile-text{
-                    visibility: visible;
-                } 
             } 
         }
     }
+}
+
+@media (min-width: 466px) and (max-width: 487px) {
+    .main__container--hover-animation-465px:hover{
+        .desktop-text-larger{
+            visibility: hidden;
+            position: absolute;
+        }
+        .mobile-text-larger{
+            visibility: visible;
+        } 
+    }
+}
+
+@media (min-width: 395px) and (max-width: 431px){
+    .main__container--hover-animation-394px:hover{
+        .desktop-text-larger{
+            visibility: hidden;
+            position: absolute;
+        }
+        .mobile-text-larger{
+            visibility: visible;
+        } 
+    }
+}
+
+@media (min-width: 401px) and (max-width: 438px){
+    .main__container--hover-animation-400px:hover{
+        .desktop-text-larger{
+            visibility: hidden;
+            position: absolute;
+        }
+        .mobile-text-larger{
+            visibility: visible;
+        } 
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .main__container--hover-animation-465px:hover{
+        @include animation-hover-larger
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main__container--hover-animation-400px:hover{
+        @include animation-hover-larger
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .main__container--hover-animation-394px:hover{
+        @include animation-hover-larger
+    }
+}
+
+@media screen and (max-width: 371px) {
+    .main__container--hover-animation-371px:hover{
+        @include animation-hover-larger
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .main__container--hover-animation-361px:hover{
+        @include animation-hover-larger
     }
 }
 

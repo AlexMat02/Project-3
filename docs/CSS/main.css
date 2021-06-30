@@ -153,7 +153,20 @@ main {
   transition: visibility;
 }
 
+.mobile-text-larger {
+  visibility: hidden;
+  -webkit-transition: visibility;
+  transition: visibility;
+}
+
 .desktop-text {
+  visibility: visible;
+  position: initial;
+  -webkit-transition: visibility;
+  transition: visibility;
+}
+
+.desktop-text-larger {
   visibility: visible;
   position: initial;
   -webkit-transition: visibility;
@@ -305,6 +318,12 @@ main {
   z-index: 1;
 }
 
+.main__container--hover-animation-449px {
+  color: black;
+  -webkit-transition: all;
+  transition: all;
+}
+
 .main__container--animation-1 {
   -webkit-animation-name: card-1;
           animation-name: card-1;
@@ -374,36 +393,68 @@ main {
   }
 }
 
-.main__container--hover-animation-larger {
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  background-color: white;
-}
-
-.main__container--hover-animation-larger:hover .main__container-logohover {
-  opacity: 1;
-  -webkit-animation-name: hover-animation-checkmark;
-          animation-name: hover-animation-checkmark;
-}
-
-.main__container--hover-animation-larger:hover .main__container-logohover-2 {
-  -webkit-animation-name: hover-animation-checkmark-2-larger;
-          animation-name: hover-animation-checkmark-2-larger;
-}
-
-.main__container--hover-animation-larger:hover .main__container-price {
-  position: inherit;
-  -webkit-animation-name: hover-animation-price;
-          animation-name: hover-animation-price;
-}
-
-@media screen and (max-width: 380px) {
-  .main__container--hover-animation-larger:hover .desktop-text {
-    position: absolute;
+@media (min-width: 466px) and (max-width: 487px) {
+  .main__container--hover-animation-465px:hover .desktop-text-larger {
     visibility: hidden;
+    position: absolute;
   }
-  .main__container--hover-animation-larger:hover .mobile-text {
+  .main__container--hover-animation-465px:hover .mobile-text-larger {
     visibility: visible;
+  }
+}
+
+@media (min-width: 395px) and (max-width: 431px) {
+  .main__container--hover-animation-394px:hover .desktop-text-larger {
+    visibility: hidden;
+    position: absolute;
+  }
+  .main__container--hover-animation-394px:hover .mobile-text-larger {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 438px) {
+  .main__container--hover-animation-400px:hover .desktop-text-larger {
+    visibility: hidden;
+    position: absolute;
+  }
+  .main__container--hover-animation-400px:hover .mobile-text-larger {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .main__container--hover-animation-465px:hover .main__container-logohover-2 {
+    -webkit-animation-name: hover-animation-checkmark-2-larger;
+            animation-name: hover-animation-checkmark-2-larger;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__container--hover-animation-400px:hover .main__container-logohover-2 {
+    -webkit-animation-name: hover-animation-checkmark-2-larger;
+            animation-name: hover-animation-checkmark-2-larger;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .main__container--hover-animation-394px:hover .main__container-logohover-2 {
+    -webkit-animation-name: hover-animation-checkmark-2-larger;
+            animation-name: hover-animation-checkmark-2-larger;
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .main__container--hover-animation-371px:hover .main__container-logohover-2 {
+    -webkit-animation-name: hover-animation-checkmark-2-larger;
+            animation-name: hover-animation-checkmark-2-larger;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .main__container--hover-animation-361px:hover .main__container-logohover-2 {
+    -webkit-animation-name: hover-animation-checkmark-2-larger;
+            animation-name: hover-animation-checkmark-2-larger;
   }
 }
 

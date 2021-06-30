@@ -2,3 +2,9 @@
     animation-name: card-1;
     position: relative;
 }
+
+@mixin animation-hover-larger {
+    .main__container-logohover-2{
+        animation-name: hover-animation-checkmark-2-larger;
+    }
+}
